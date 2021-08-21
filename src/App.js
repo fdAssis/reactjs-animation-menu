@@ -1,11 +1,12 @@
 import GlobalStyles from './styles/GlobalStyles';
 import Layout from './components/Layout';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <>
       <Layout>
-        <h1>Francisco</h1>
+        <Navbar />
       </Layout>
 
       <GlobalStyles/>
