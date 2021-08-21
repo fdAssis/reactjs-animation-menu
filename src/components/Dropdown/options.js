@@ -56,20 +56,36 @@ export function DropdownOption({ name, content: Content, backgroundHeight }) {
 
     }, [
         registerOption,
-        id, 
+        id,
         registered,
         optionDimensions,
-        updateOptionProps, 
-        deleteOptionById, 
+        updateOptionProps,
+        deleteOptionById,
         backgroundHeight
     ]);
 
+    useEffect(() => deleteOptionById(id), [deleteOptionById, id]);
 
+    const handleOpen = () => setTargetId(id);
+    const handleClose = () => setTargetId(null);
+    const handleTouch = () => (window.isMobile = true);
+  
+    const handleClick = (e) => {
+      e.preventDefault();
+  
+      return targetId === id ? handleClose() : handleOpen();
+    };
 
     return (
         <motion.button
-            className='dropdown-option'
+            className="dropdown-option"
             ref={optionHook}
+            onMouseDown={handleClick}
+            onHoverStart={() => !window.isMobile && handleOpen()}
+            onHoverEnd={() => !window.isMobile && handleClose()}
+            onTouchStart={handleTouch}
+            onFocus={handleOpen}
+            onBlur={handleClose}
         >
 
             {name}
