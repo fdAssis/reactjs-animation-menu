@@ -1,34 +1,37 @@
 import React from "react";
 
-import { DropdownOption } from '../Dropdown'
+import { DropdownOption, DropdownProvider } from '../Dropdown'
 import { Container, DropdownStyles } from './styles';
+import { Products, Developers, Company } from '../../Content';
 
 function Navbar() {
     return (
-        <DropdownStyles>
-            <Container>
-                <ul>
-                    <li>
-                        <DropdownOption
-                            name='Produtos'
-                            content={() => <h1>Produtos</h1>}
-                        />
-                    </li>
-                    <li>
-                        <DropdownOption
-                            name='Desenvolvedores'
-                            content={() => <h1>Desenvolvedores</h1>}
-                        />
-                    </li>
-                    <li>
-                        <DropdownOption
-                            name='Empresa'
-                            content={() => <h1>Empresa</h1>}
-                        />
-                    </li>
-                </ul>
-            </Container>
-        </DropdownStyles>
+        <DropdownProvider>
+            <DropdownStyles>
+                <Container>
+                    <ul>
+                        <li>
+                            <DropdownOption
+                                name='Produtos'
+                                content={Products}
+                            />
+                        </li>
+                        <li>
+                            <DropdownOption
+                                name='Desenvolvedores'
+                                content={Developers}
+                            />
+                        </li>
+                        <li>
+                            <DropdownOption
+                                name='Empresa'
+                                content={Company}
+                            />
+                        </li>
+                    </ul>
+                </Container>
+            </DropdownStyles>
+        </DropdownProvider>
     )
 }
 
