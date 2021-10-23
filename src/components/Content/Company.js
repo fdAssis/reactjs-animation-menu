@@ -40,16 +40,16 @@ export const Company = () => (
         Do blog
       </li>
       <li>
-        Payouts with no code required
+        Pagamentos sem necessidade de código
         <span className="new-tag">Novo</span>
         <span className="arrow">{'>'}</span>
       </li>
       <li>
-        Introducing the Billing customer portal
+        Apresentando o portal do cliente
         <span className="arrow">{'>'}</span>
       </li>
       <li>
-        Online bank transfers through FPX are now...
+        Transferencia online 
         <span className="arrow">{'>'}</span>
       </li>
     </ul>

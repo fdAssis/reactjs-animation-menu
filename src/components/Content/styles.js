@@ -23,6 +23,7 @@ export const ProductsWrapper = styled.div`
   padding: 32px 35px;
   white-space: nowrap;
   .primary {
+    margin-left: -70px;
     li {
       display: flex;
       align-items: center;
@@ -59,7 +60,7 @@ export const ProductsWrapper = styled.div`
   }
   .secondary {
     margin-top: 60px;
-    margin-left: -10px;
+    margin-left: -60px;
     li {
       ${hover}
       display: flex;
@@ -144,6 +145,7 @@ export const DevelopersWrapper = styled.div`
   }
   .secondary {
     margin-top: 69px;
+    margin-left: 30px;
     li {
       ${hover}
       ${h3}
@@ -178,6 +180,7 @@ export const DevelopersWrapper = styled.div`
 export const CompanyWrapper = styled.div`
   padding: 32px 35px;
   white-space: nowrap;
+  margin-left: -60px;
   .primary {
     > li {
       ${h3}

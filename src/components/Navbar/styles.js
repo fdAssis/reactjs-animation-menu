@@ -19,7 +19,7 @@ export const DropdownStyles = styled.div`
     color: #fff;
     font-size: 18px;
 
-    transition: opacity 0.2s;
+    transition: opacity 0.5s;
 
     &:hover,
     &:focus {
@@ -68,7 +68,7 @@ export const DropdownStyles = styled.div`
   .dropdown-background {
     position: absolute;
     bottom: 0;
-    background: #191622;
+    background: #D8E3E7;
     width: 100%;
   }
 `;
