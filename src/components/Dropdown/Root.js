@@ -21,7 +21,7 @@ export function DropdownRoot() {
 
     width = contentDimensions?.width;
     height = contentDimensions?.height;
-    x = optionCenterX - width / 2;
+    x = optionCenterX - height / 2;
   }
 
   const [hovering, setHovering] = useState(false);

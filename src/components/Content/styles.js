@@ -59,6 +59,7 @@ export const ProductsWrapper = styled.div`
   }
   .secondary {
     margin-top: 60px;
+    margin-left: -10px;
     li {
       ${hover}
       display: flex;
